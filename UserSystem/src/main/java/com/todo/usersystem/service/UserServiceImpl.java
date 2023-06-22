@@ -35,6 +35,7 @@ public class UserServiceImpl implements UserService {
         if (optionalUser.isPresent()) {
             User user = optionalUser.get();
             user.setName(updatedUser.getName());
+            user.setEmail(updatedUser.getEmail());
             user.setPassword(updatedUser.getPassword());
             // Set other properties that you want to update
 
